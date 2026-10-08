@@ -1,0 +1,4 @@
+# Pin Node 22 for the Nixpacks build — Next.js 16 requires >= 20.9
+# (Nixpacks' default auto-detection picks nodejs_18, which fails `next build`).
+[phases.setup]
+nixPkgs = ["nodejs_22", "npm-9_x"]
